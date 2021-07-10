@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PizZa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">PizZΘ</a>
+        <ul class="navigation">
+            <li><a href="#banner">HOME</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#app">APP</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h2>Welcome to PizZΘ</h2>
+            <p>
+                We offer high quality and delicious pizzas from authentic italian restraunts,
+                We intend to provide you with the best quality Pizza
+            </p>
+            <a href="#" class="btn" >Choices</a>
+        </div> 
+    </section>
+    <script type="text/javascript">
+    window.addEventListever('scroll',function(){
+        const header=document.querySelector('header');
+        header.classList.toggle("sticky",window.scrollY > 0)
+
+    });
+</script>
+</body>
+</html>
